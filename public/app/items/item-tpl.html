@@ -1,0 +1,18 @@
+<div class="item">
+	<div class="product">
+		<div class="image">
+			<img ng-src="{{item.imgUrl}}"/>
+		</div>
+		<div class="description">
+			<h4>{{item.name}}</h4>
+			<label>Price:&nbsp;{{::item.price}}$</label>
+			<div>
+				<label>Sizes:&nbsp;</label>
+				<select>
+					<option ng-repeat="inStock in item.inStock">{{inStock | keyFilter}}</option>
+				</select>
+				<button class="btn btn-default add-btn" ng-disabled="!model.inStock" ng-click="addItem()">Add</button>
+			</div>
+		</div>
+	</div>
+</div>

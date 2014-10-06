@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700); 
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/* =============================================================== */
+/* GLOBAL
+/* =============================================================== */
+
+a {
+	color: #34495E;
+	text-decoration: none;
+	outline: none !important;
+   -moz-transition: all .2s ease-in;
+   -webkit-transition: all .2s ease-in;
+   -o-transition: all .2s ease-in;
+   transition: all .2s ease-in;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	cursor: pointer;
+}
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #34495E;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	position: relative;
+}
+
+/* =============================================================== */
+/* TYPOGRAPHY
+/* =============================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: normal;
+	margin: 0;
+	padding-bottom: 5px;
+}
+h1 {
+	font-size: 30px;
+	line-height: 35px;
+}
+h2 {
+	font-size: 24px;
+	line-height: 28px;
+}
+h3 {
+	font-size: 20px;
+	line-height: 24px;
+}
+h4 {
+	font-size: 17px;
+	line-height: 20px;
+}
+h5 {
+	font-size: 14px;
+	line-height: 20px;
+}
+h6 {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+/* =============================================================== */
+/* PAGES
+/* =============================================================== */
+header {
+	height: 80px;
+}
+
+.list {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	position: relative;	
+	float: left;
+	width: 100%;
+}
+
+.product {
+	display: block;
+	height: 430px;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	border: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	text-align: center;
+}
+.product:hover {
+	background: #fff;
+}
+
+.item {
+	padding: 10px;
+	display: block;
+	float: left;	
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;		
+	width: 33.333333%;
+}
+
+.item img {	
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	max-width: 80%;
+	height: auto;
+}
+
+.image {
+	height: 300px;
+}
+
+.description {
+	margin: 0 4px 0 5px;
+	min-height: 107px;
+}
+
+.add-btn {
+	margin-left: 15px;
+}
+
+.order-btn {
+	margin: 15px;
+}
+
+.cart {
+	background: url('./images/cart-img.png');
+	display: inline-block;
+	float: right;
+	margin-right: 100px;
+	margin-top: 10px;
+	width: 64px;
+	height: 64px;
+}
+
+table th {
+	text-align: center;
+}
+
+table td {
+	border: 1px solid #ddd;
+}
+
+table.table.table {
+	margin-bottom: 20px;
+}

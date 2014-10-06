@@ -1,0 +1,20 @@
+div.container.panel.panel-default
+    .row
+        button.button.pull-right.order-btn(ng-click="order(cart)")
+            | Order
+    input(type='text', name='userInfo', class="form-control", placeholder='Name, Surname, P.O. Box, Address, Telephone', ng-model="user.userInfo")
+    br
+    table.table
+        tr
+            th Name
+            th Size
+            th Amount
+            th Price per item
+            th Remove item
+        tr(ng-repeat="item in cart" ng-show="item.amount > 0")
+            td {{ item.name }}
+            td {{ item.type }}
+            td.text-right {{ item.amount }}
+            td.text-right {{ item.price }}$
+            td.text-center
+                button(ng-click="removeItem(item)")= "Remove"

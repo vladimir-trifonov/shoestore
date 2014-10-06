@@ -1,0 +1,8 @@
+extends includes/layout
+block main-content
+	header
+		a(ui-sref="cart", ng-controller='cartCtrl')
+			span.cart
+	section
+		div(ui-view)
+	footer
